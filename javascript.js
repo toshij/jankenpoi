@@ -15,16 +15,28 @@ function getComputerChoice(){
 
 //randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’
 
-console.log(getComputerChoice());
-
 function getPlayerChoice(){
-    
+    prompt("Rock, Paper or Scissors?");
+
 }
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection == "Rock" && computerSelection == "Rock")
+        console.log("Draw");
+    else if (playerSelection == "Rock" && computerSelection == "Paper")
+        console.log("You Lose. -1 Point");
+    else if (playerSelection == "Rock" && computerSelection == "Scissors")
+        console.log("You Win. +1 Point");
+  }
+   
+  const playerSelection = getPlayerChoice();
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
 
 /*
 1. Make a function for NPC that returns rock, paper or scissors √
 2. Make a function that allows Player to click between rock, paper or scissors 
-3. Make a function that decides who gets points based on I-XI outcome
+3. Make a function that decides who gets points based on I-IX outcome
 
     A. Make a function that returns a list of outcomes
 
