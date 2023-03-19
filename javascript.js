@@ -17,7 +17,7 @@ function getComputerChoice(){
 
 function getPlayerChoice(){
     prompt("Rock, Paper or Scissors?");
-
+    return;
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -27,6 +27,7 @@ function playRound(playerSelection, computerSelection) {
         console.log("You Lose. -1 Point");
     else if (playerSelection == "Rock" && computerSelection == "Scissors")
         console.log("You Win. +1 Point");
+return;
   }
    
   const playerSelection = getPlayerChoice();
