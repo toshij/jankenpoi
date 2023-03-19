@@ -21,11 +21,17 @@ function getPlayerChoice(){
 }
 
 function playRound(playerSelection, computerSelection) {
+var  draw;
+var  computerwin;
+var  playerwin;
     if (playerSelection == "Rock" && computerSelection == "Rock")
+        return draw;
         console.log("Draw");
     else if (playerSelection == "Rock" && computerSelection == "Paper")
+        return computerwin;
         console.log("You Lose. -1 Point");
     else if (playerSelection == "Rock" && computerSelection == "Scissors")
+        return playerwin;
         console.log("You Win. +1 Point");
 return;
   }
